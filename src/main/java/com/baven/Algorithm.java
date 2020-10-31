@@ -11,7 +11,7 @@ package com.baven;
 public class Algorithm {
     public static void main(String[] args) {
         int[] nums = {9,5,2,7,3,8};
-        int[] ans = new Solution().mergeSort(nums);
+        int[] ans = new Solution().mergeSort1(nums);
         for (int an : ans) {
             System.out.print(an + " ");
         }
@@ -66,11 +66,12 @@ class Solution {
     }
 
     // recursion
-    public void mergeSort1(int[] arr) {
+    public int[] mergeSort1(int[] arr) {
         if (arr == null || arr.length < 2) {
-            return;
+            return arr;
         }
         process(arr, 0, arr.length - 1);
+        return arr;
     }
     // 👇
     public void process(int[] arr, int L, int R) {

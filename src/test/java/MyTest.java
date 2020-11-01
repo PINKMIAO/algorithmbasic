@@ -24,7 +24,25 @@ public class MyTest {
     // for test
     @Test
     public void test01() {
+        int[] ints = generateRandomArray(50, 10);
+        for (int anInt : ints) {
+            System.out.print(anInt + " ");
+        }
+    }
 
+    // for test
+    /**
+     * 自动生成随机数组，目的便于测试
+     * @param maxSize
+     * @param maxValue
+     * @return
+     */
+    public int[] generateRandomArray(int maxSize, int maxValue) {
+        int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
+        }
+        return arr;
     }
 
 }

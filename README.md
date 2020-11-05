@@ -1,4 +1,4 @@
-# testAboutGit
+# algorthmbasic
 Leraning🐷
 
 🌲for test github

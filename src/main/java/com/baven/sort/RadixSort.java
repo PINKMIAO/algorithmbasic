@@ -47,33 +47,38 @@ public class RadixSort {
         return bits;
     }
 
-    public static void radixSort(int[] arr, int L, int R, int bits) {
+    public static void radixSort(int[] arr, int L, int R, int digit) {
+        final int radix = 10;
         int i = 0, j = 0;
-        int[] helper = new int[R - L + 1];
 
-        for (int d = 1; d <= bits; d++) {
+        int[] help = new int[R - L + 1];
+        for (int d = 1; d <= digit; d++) {
 
-            int[] count  = new int[10];
-            for (i = L; i < R; i++) {
+            int[] count = new int[radix]; // count[0..9]
+            for (i = L; i <= R; i++) {
+                // 103  1   3
+                // 209  1   9
                 j = getBits(arr[i], d);
                 count[j]++;
             }
-            for (i = 1; i < 10; i++) {
+            for (i = 1; i < radix; i++) {
                 count[i] = count[i] + count[i - 1];
             }
-            for (i = R; i > L; i--) {
+            for (i = R; i >= L; i--) {
                 j = getBits(arr[i], d);
-                helper[count[j] - 1] = arr[i];
+                help[count[j] - 1] = arr[i];
                 count[j]--;
             }
             for (i = L, j = 0; i <= R; i++, j++) {
-                arr[i] = helper[j];
+                arr[i] = help[j];
             }
         }
+
+
     }
     public static int getBits(int x, int d){
         // (10, 0) == 1 , (10, 1) == 10 , (10 , 2) == 100
-        return ((x / ((int) Math.pow(10, d - 1))) % 10) ;
+        return ((x / ((int) Math.pow(10, d - 1))) % 10);
     }
 
 }

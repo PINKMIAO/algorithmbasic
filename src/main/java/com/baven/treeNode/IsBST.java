@@ -106,7 +106,7 @@ public class IsBST {
         if (level > maxLevel || Math.random() < 0.5) {
             return null;
         }
-        TreeNode head = new TreeNode((int)Math.random() * maxValue);
+        TreeNode head = new TreeNode((int)(Math.random() * maxValue));
         head.left = generate(level + 1, maxLevel, maxValue);
         head.right = generate(level + 1, maxLevel, maxValue);
         return head;

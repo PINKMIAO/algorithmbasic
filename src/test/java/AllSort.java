@@ -4,10 +4,9 @@
 public class AllSort {
 
     public static void main(String[] args) {
-        String[] ans = createRandomStrArr(10, 5);
-        for (String an : ans) {
-            System.out.print(an + " ");
-        }
+        int[] arr = createRandomArr(10, 10);
+        System.out.println(String.valueOf(arr));
+        
     }
 
     /**

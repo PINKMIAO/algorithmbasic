@@ -48,9 +48,7 @@ public class GetLinkedListLoop {
         test.next.next.next.next.next.next.next = new Node(3);
         test.next.next.next.next.next.next.next.next = test.next.next.next.next;
 
-        printLinkedList(test);
         getLoop(test);
-
     }
 
 }

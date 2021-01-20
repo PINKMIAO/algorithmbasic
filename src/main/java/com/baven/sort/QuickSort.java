@@ -7,6 +7,7 @@ package com.baven.sort;
 public class QuickSort {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         int maxSize = 20;
         int maxValue = 20;
         int[] arr = createGroup(maxSize, maxValue);
@@ -14,6 +15,15 @@ public class QuickSort {
         printGroup(arr);
         quickSort3(arr);
         printGroup(arr);
+=======
+        int[] arr = {5,3,2,6,1,5,3,9,7,4,2};
+
+        quickSort3(arr);
+
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+>>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
     }
 
     public static void swag(int[] arr, int i, int j) {
@@ -26,7 +36,11 @@ public class QuickSort {
             return new int[] {-1, -1};
         }
         if (l == r) {
+<<<<<<< HEAD
             return new int[] {l, r};
+=======
+            return new int[] {l , r};
+>>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
         }
 
         int less = l - 1;
@@ -123,6 +137,7 @@ public class QuickSort {
         process3(arr, l, m[0] - 1);
         process3(arr, m[1] + 1, r);
     }
+<<<<<<< HEAD
 
 
     public static int[] createGroup(int maxSize, int maxValue) {
@@ -139,4 +154,6 @@ public class QuickSort {
         }
         System.out.println();
     }
+=======
+>>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
 }

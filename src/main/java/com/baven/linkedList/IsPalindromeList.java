@@ -35,15 +35,23 @@ public class IsPalindromeList {
         }
         return true;
     }
+<<<<<<< HEAD
 
     // 折半放进栈中，额外的一个栈空间
     public static boolean isPalindrome2(Node head) {
+=======
+    public static boolean isPalindrome2(Node head) { // 折半放进栈中
+>>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
         if (head == null || head.next == null) {
             return true;
         }
         Node slow = head.next;
         Node fast = head.next.next;
+<<<<<<< HEAD
         while (fast.next != null && fast.next.next != null) {       // 1 1 1 1 1 1 1
+=======
+        while (fast.next != null && fast.next.next != null) {
+>>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
             slow = slow.next;
             fast = fast.next.next;
         }
@@ -63,7 +71,10 @@ public class IsPalindromeList {
         }
         return true;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
     public static boolean isPalindrome3(Node head) {
         if (head == null || head.next == null) {
             return true;

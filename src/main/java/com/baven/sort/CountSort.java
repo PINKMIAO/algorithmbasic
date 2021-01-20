@@ -12,11 +12,8 @@ public class CountSort {
         printGroup(arr);
     }
 
-<<<<<<< HEAD
     // for test
-=======
     // util for test
->>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
     public static int[] createGroup(int maxSize, int maxValue){
         int[] arr = new int[(int)(Math.random() * maxSize)];
         for (int i = 0; i < arr.length; i++) {

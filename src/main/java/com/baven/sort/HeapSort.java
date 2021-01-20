@@ -4,17 +4,10 @@ public class HeapSort {
 
     public static void main(String[] args) {
         int[] arr = creatGroup(20, 20);
-<<<<<<< HEAD
 
         printGroup(arr);
         heapSort(arr);
         printGroup(arr);
-=======
-        heapSort(arr);
-        for (int anInt : arr) {
-            System.out.print(anInt + " ");
-        }
->>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
     }
 
     public static void swap(int[] arr, int i, int j) {
@@ -29,15 +22,13 @@ public class HeapSort {
         }
         return nums;
     }
-<<<<<<< HEAD
     public static void printGroup(int[] arr) {
         for (int i : arr) {
             System.out.print(i + " ");
         }
         System.out.println();
     }
-=======
->>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
+
 
     /**
      * 大根堆
@@ -58,13 +49,12 @@ public class HeapSort {
         }
 
         // 将位于大根堆第一位的值移动到最后一位，在把位于第一位的值进行单方面的移动
-<<<<<<< HEAD
+
         int heapSize = arr.length - 1;
         swap(arr, 0, heapSize);
-=======
-        int heapSize = arr.length;
-        swap(arr, 0, --heapSize);
->>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
+//        int heapSize = arr.length;
+//        swap(arr, 0, --heapSize);
+
 
         while (heapSize > 0) {
             heapify(arr, 0, heapSize);

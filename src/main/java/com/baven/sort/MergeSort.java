@@ -6,7 +6,6 @@ package com.baven.sort;
 public class MergeSort {
 
     public static void main(String[] args) {
-<<<<<<< HEAD
         int maxSize = 20;
         int maxValue = 20;
         int[] nums = createGroup(maxSize, maxValue);
@@ -14,15 +13,6 @@ public class MergeSort {
         printGroup(nums);
         process(nums, 0, nums.length - 1);
         printGroup(nums);
-=======
-        int[] nums = {5,3,2,6,1,5,3,9,7,4,2};
-
-        process(nums, 0, nums.length - 1);
-
-        for (int num : nums) {
-            System.out.print(num + " ");
-        }
->>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
     }
 
     public static void process(int[] arr, int L, int R) {
@@ -53,7 +43,7 @@ public class MergeSort {
             nums[l + i] = helper[i];
         }
     }
-<<<<<<< HEAD
+
     public static int[] createGroup(int maxSize, int maxValue) {
         int[] arr = new int[(int) (Math.random() * maxSize)];
         for (int i = 0; i < arr.length; i++) {
@@ -67,7 +57,4 @@ public class MergeSort {
         }
         System.out.println();
     }
-=======
->>>>>>> 065c37711a50f8ca653bdbef0bb53f99ebdd28d4
-
 }

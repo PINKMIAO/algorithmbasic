@@ -14,7 +14,7 @@ public class GetLinkedListLoop {
         Node slow = head.next;
         Node fast = head.next.next;
         while (slow != fast) {
-            if (fast.next == null && fast.next.next == null) {
+            if (fast.next == null || fast.next.next == null) {
                 return null;
             }
             slow = slow.next;

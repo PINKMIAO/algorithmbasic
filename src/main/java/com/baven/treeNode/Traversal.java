@@ -88,7 +88,7 @@ public class Traversal {
         int maxLevel = 5;
         int maxValue = 100;
         TreeNode root = generateRandomTree(maxLevel, maxValue);
-        lTraversalByStack(root);
+        traversalProcess(root);
     }
 
 }

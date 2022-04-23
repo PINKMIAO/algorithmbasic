@@ -3,8 +3,8 @@ import org.junit.Test;
 public class MyTest {
 
     @Test
-    public void test(){
-        int[] arr = {1, 2, 3, 4,4,5,8,7,9,0,5,4,3,1};
+    public void test() {
+        int[] arr = {1, 2, 3, 4, 4, 5, 8, 7, 9, 0, 5, 4, 3, 1};
         StringBuilder ans = new StringBuilder();
 
         int sum = 9;
@@ -31,8 +31,10 @@ public class MyTest {
     }
 
     // for test
+
     /**
      * 自动生成随机数组，目的便于测试
+     *
      * @param maxSize
      * @param maxValue
      * @return
@@ -47,7 +49,7 @@ public class MyTest {
 
 
     @Test
-    public void test03(){
+    public void test03() {
         int temp = 0;
         // 打入条件断点
         for (int i = 0; i < 100; i++) {

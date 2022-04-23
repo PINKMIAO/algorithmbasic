@@ -2,10 +2,11 @@ package com.baven.linkedList;
 
 public class GetLinkedListLoop {
 
-    public static class Node{
+    public static class Node {
         public int value;
         public Node next;
-        public Node(int value){
+
+        public Node(int value) {
             this.value = value;
         }
     }
@@ -28,6 +29,7 @@ public class GetLinkedListLoop {
         System.out.println(fast.value);
         return slow;
     }
+
     public static void printLinkedList(Node head) {
         while (head != null) {
             System.out.print(head.value + " ");
@@ -42,7 +44,7 @@ public class GetLinkedListLoop {
         test.next = new Node(2);
         test.next.next = new Node(4);
         test.next.next.next = new Node(7);
-        test.next.next.next.next = new  Node(5);
+        test.next.next.next.next = new Node(5);
         test.next.next.next.next.next = new Node(1);
         test.next.next.next.next.next.next = new Node(2);
         test.next.next.next.next.next.next.next = new Node(3);

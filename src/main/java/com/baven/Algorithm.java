@@ -2,15 +2,15 @@ package com.baven;
 
 /**
  * How Many Numbers Are Smaller Than the Current Number
- *
+ * <p>
  * Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it.
  * That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
- *
+ * <p>
  * Return the answer in an array.
  */
 public class Algorithm {
     public static void main(String[] args) {
-        int[] nums = {9,5,2,7,3,8};
+        int[] nums = {9, 5, 2, 7, 3, 8};
         int[] ans = new Solution().mergeSort1(nums);
         for (int an : ans) {
             System.out.print(an + " ");
@@ -21,13 +21,13 @@ public class Algorithm {
 
 class Solution {
     // Violent Solution
-    public int[] solution(int[] nums){
+    public int[] solution(int[] nums) {
         int[] helper = new int[nums.length];
 
         for (int i = 0; i < helper.length; i++) {
             int count = 0;
             for (int j = 0; j < helper.length; j++) {
-                if (nums[i] > nums[j]){
+                if (nums[i] > nums[j]) {
                     count++;
                 }
             }
@@ -73,6 +73,7 @@ class Solution {
         process(arr, 0, arr.length - 1);
         return arr;
     }
+
     // 👇
     public void process(int[] arr, int L, int R) {
         if (L == R) { // base case

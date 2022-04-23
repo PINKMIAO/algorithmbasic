@@ -5,10 +5,11 @@ package com.baven.linkedList;
  */
 public class SmallEqualBigger {
 
-    public static class Node{
+    public static class Node {
         public int value;
         public Node next;
-        public Node(int value){
+
+        public Node(int value) {
             this.value = value;
         }
     }
@@ -54,11 +55,13 @@ public class SmallEqualBigger {
             }
         }
     }
+
     public static void swag(Node[] nodeArr, int i, int j) {
         Node temp = nodeArr[i];
         nodeArr[i] = nodeArr[j];
         nodeArr[j] = temp;
     }
+
     public static void printLinked(Node head) {
         System.out.print("LinkedList: ");
         while (head != null) {

@@ -5,10 +5,12 @@ public class LinkedTest {
     public static class Node {
         int value;
         Node next;
+
         public Node(int value) {
             this.value = value;
         }
     }
+
     public static Node getLoop(Node head) {
         Node slow = head.next;
         Node fast = head.next.next;
@@ -27,6 +29,7 @@ public class LinkedTest {
         System.out.println(slow.value);
         return slow;
     }
+
     public static Node reserveLink(Node head) {
         if (head == null || head.next == null) {
             return head;
@@ -41,10 +44,6 @@ public class LinkedTest {
         }
         return temp;
     }
-
-
-
-
 
 
     public static void main(String[] args) {
@@ -64,6 +63,7 @@ public class LinkedTest {
         Node node = reserveLink(test);
         printLinked(node);
     }
+
     public static void printLinked(Node head) {
         while (head != null) {
             System.out.print(head.value + " ");

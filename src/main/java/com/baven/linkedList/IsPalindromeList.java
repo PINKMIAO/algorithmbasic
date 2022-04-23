@@ -7,11 +7,11 @@ import java.util.Stack;
  */
 public class IsPalindromeList {
 
-    public static class Node{
+    public static class Node {
         public Node next;
         public int value;
 
-        public Node(int value){
+        public Node(int value) {
             this.value = value;
         }
     }
@@ -23,7 +23,7 @@ public class IsPalindromeList {
         }
         Stack<Node> stack = new Stack<Node>();
         Node curr = head;
-        while (curr != null){
+        while (curr != null) {
             stack.push(curr);
             curr = curr.next;
         }
@@ -67,7 +67,7 @@ public class IsPalindromeList {
         return true;
     }
 
-    public static boolean isPalindrome3 (Node head){
+    public static boolean isPalindrome3(Node head) {
         if (head == null || head.next == null) {
             return true;
         }

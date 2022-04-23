@@ -8,10 +8,11 @@ import com.baven.linkedList.GetLinkedListLoop;
  */
 public class ReverseList_143 {
 
-    public static class Node{
+    public static class Node {
         public int val;
         public Node next;
-        public Node(int val){
+
+        public Node(int val) {
             this.val = val;
         }
     }
@@ -27,8 +28,8 @@ public class ReverseList_143 {
         printList(head);
         reorderList(head);
         printList(head);
-
     }
+
     public static void printList(Node head) {
         System.out.print("ListNode: ");
         while (head != null) {
@@ -46,7 +47,7 @@ public class ReverseList_143 {
         Node R = mid.next;
         mid.next = null;
         Node temp = null;
-        while(R.next != null) {
+        while (R.next != null) {
             temp = R.next;
             R.next = L;
             L = R;
@@ -56,7 +57,7 @@ public class ReverseList_143 {
 
         L = head;
         int count = 0;
-        while(L != null) {
+        while (L != null) {
             count++;
             L = L.next;
         }
@@ -81,7 +82,7 @@ public class ReverseList_143 {
     public static Node midOrDownMid(Node head) {
         Node slow = head.next;
         Node fast = head.next;
-        while(fast.next != null && fast.next.next != null) {
+        while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }

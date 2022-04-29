@@ -1,7 +1,5 @@
 package com.weekTrain.weekdp4;
 
-import jdk.nashorn.internal.ir.SplitReturn;
-
 /**
  * @author Baven
  * @date 2022/4/27 12:28
@@ -24,8 +22,27 @@ public class A17_SplitNumber {
         return ans;
     }
 
+    public static int dp1(int n) {
+        int[][] dp = new int[n + 1][n + 1];
+        for (int i = 1; i <= n; i++) {
+            dp[i][0] = 1;
+            dp[i][i] = 1;
+        }
+        for (int pre = n-1; pre >= 1; pre--) {
+            for (int rest = pre + 1; rest <= n; rest++) {
+                int ans = 0;
+                for (int first = pre; first <= rest; first++) {
+                    ans += dp[first][rest - first];
+                }
+                dp[pre][rest] = ans;
+            }
+        }
+        return dp[1][n];
+    }
+
     public static void main(String[] args) {
         int n = 4;
         System.out.println(right(n));
+        System.out.println(dp1(n));
     }
 }

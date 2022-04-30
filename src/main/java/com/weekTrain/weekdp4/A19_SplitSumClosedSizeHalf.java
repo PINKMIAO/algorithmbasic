@@ -28,7 +28,6 @@ public class A19_SplitSumClosedSizeHalf {
             }
             return Math.max(p1, p2);
         }
-
     }
 
     public static void main(String[] args) {

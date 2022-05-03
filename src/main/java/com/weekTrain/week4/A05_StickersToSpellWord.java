@@ -1,4 +1,4 @@
-package com.weekTrain.weekdp4;
+package com.weekTrain.week4;
 
 import java.util.HashMap;
 

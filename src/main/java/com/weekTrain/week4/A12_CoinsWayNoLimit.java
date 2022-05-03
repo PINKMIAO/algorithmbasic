@@ -1,4 +1,4 @@
-package com.weekTrain.weekdp4;
+package com.weekTrain.week4;
 
 /**
  * @author Baven

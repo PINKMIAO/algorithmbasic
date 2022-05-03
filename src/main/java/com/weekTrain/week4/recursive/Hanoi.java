@@ -1,4 +1,4 @@
-package com.weekTrain.weekdp4.recursive;
+package com.weekTrain.week4.recursive;
 
 /**
  * @author Baven

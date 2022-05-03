@@ -1,4 +1,4 @@
-package com.weekTrain.weekslidingwindow6;
+package com.weekTrain.week6;
 
 import java.util.LinkedList;
 

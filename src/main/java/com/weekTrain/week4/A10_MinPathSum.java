@@ -1,6 +1,4 @@
-package com.weekTrain.weekdp4;
-
-import sun.applet.Main;
+package com.weekTrain.week4;
 
 /**
  * @author Baven

@@ -1,6 +1,5 @@
-package com.weekTrain.weekslidingwindow6;
+package com.weekTrain.week6;
 
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;

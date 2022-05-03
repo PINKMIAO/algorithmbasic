@@ -1,6 +1,4 @@
-package com.weekTrain.weekdp4;
-
-import com.sun.scenario.effect.impl.prism.PrReflectionPeer;
+package com.weekTrain.week4;
 
 /**
  * @author Baven

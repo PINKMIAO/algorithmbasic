@@ -79,6 +79,5 @@ public class C01_MorrisTraversal {
         head.right.left = new Node(6);
         head.right.right = new Node(7);
         morrisPre(head);
-
     }
 }
